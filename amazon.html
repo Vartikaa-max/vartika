@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #232f3e; color: white; padding: 10px; display: flex; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; margin-right: 20px; }
+        .search { flex: 1; display: flex; }
+        .search input { flex: 1; padding: 8px; }
+        .search button { padding: 8px 16px; background-color: #febd69; border: none; }
+        nav { background-color: #131921; color: white; padding: 5px; }
+        nav ul { list-style: none; display: flex; margin: 0; padding: 0; }
+        nav li { margin-right: 20px; }
+        main { padding: 20px; }
+        .products { margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .nested-table { width: 100%; margin-top: 10px; }
+        .nested-table th, .nested-table td { border: 1px solid #ccc; padding: 4px; }
+        footer { background-color: #232f3e; color: white; text-align: center; padding: 10px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Amazon</div>
+        <div class="search">
+            <input type="text" placeholder="Search Amazon">
+            <button>Search</button>
+        </div>
+        <div>Account & Lists</div>
+        <div>Cart</div>
+    </header>
+    <nav>
+        <ul>
+            <li>All</li>
+            <li>Today's Deals</li>
+            <li>Customer Service</li>
+            <li>Registry</li>
+            <li>Gift Cards</li>
+            <li>Sell</li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Welcome to Amazon</h1>
+        <p>Shop for everything you need.</p>
+        <section class="products">
+            <h2>Featured Products</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Wireless Headphones</td>
+                        <td>$49.99</td>
+                        <td>
+                            <table class="nested-table">
+                                <thead>
+                                    <tr>
+                                        <th>Feature</th>
+                                        <th>Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Battery Life</td>
+                                        <td>20 hours</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Color</td>
+                                        <td>Black</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Smartphone</td>
+                        <td>$299.99</td>
+                        <td>
+                            <table class="nested-table">
+                                <thead>
+                                    <tr>
+                                        <th>Feature</th>
+                                        <th>Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Storage</td>
+                                        <td>128GB</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Camera</td>
+                                        <td>12MP</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Amazon Clone. All rights reserved.</p>
+    </footer>
+</body>
+</html>
